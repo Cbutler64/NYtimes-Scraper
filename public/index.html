@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scraping With Mongoose</title>
+    <style>
+      body { background-color: lightskyblue }
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        margin: 0 auto;
+        width: 60%;
+        height: 700px;
+      }
+      #notes {
+        display: inline-block;
+        float: right;
+        width: 30%;
+        margin: 0 auto;
+        overflow: auto;
+
+      }
+      .notes {
+        margin: 0 auto;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: #FCF5C7;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+        
+      <h1>The NyTimes Scraper</h1>
+     <a href = "/"> <button id="scrapeBtn" style = "float: left">New Scrape</button></a>
+      <br>
+      <h2>Articles</h2>
+      <div id="articles"></div>
+      <div id="notes"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

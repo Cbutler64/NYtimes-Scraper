@@ -29,7 +29,7 @@ var MONGODB_URI = process.env.MONGODB_URI;
 // Connect to the Mongo DB
 mongoose.Promise = Promise;
 //mongoose.connect(MONGODB_URI);
-mongoose.connect(MONGODB_URI || "mongodb://localhost/mongoHeadlines", { useMongoClient: true });
+mongoose.connect(MONGODB_URI || "mongodb://localhost/mongoHeadlines", { useNewUrlParser: true });
 
 // Routes
 // A GET route for scraping the echoJS website
